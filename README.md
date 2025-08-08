@@ -80,23 +80,6 @@ cd [service-name]
 * Maven
 * Microservices Architecture
 
----
-
-**Project Structure**
-
-RoyalMedico/
-|
-|── admin-service/
-|── api-gateway/
-|── billing-service/
-|── customer-service/
-|── eureka-server/
-|── inventory-service/
-|── notification-service/
-|── order-service/
-|── payment-service/
-|── prescription-service/
-|── uploads/
 
 ---
 
