@@ -85,28 +85,32 @@ cd [service-name]
 **Project Structure**
 
 RoyalMedico/
-── admin-service/
-── api-gateway/
-── billing-service/
-── customer-service/
-── eureka-server/
-── inventory-service/
-── notification-service/
-── order-service/
-── payment-service/
-── prescription-service/
-── uploads/
+|
+|── admin-service/
+|── api-gateway/
+|── billing-service/
+|── customer-service/
+|── eureka-server/
+|── inventory-service/
+|── notification-service/
+|── order-service/
+|── payment-service/
+|── prescription-service/
+|── uploads/
 
 ---
 
 **Screenshots**
 
 Postman Api testing
-<img width="1440" height="900" alt="Screenshot 2025-08-08 at 12 08 57 PM" src="https://github.com/user-attachments/assets/1306f644-12bb-418a-88a6-913a593eed4b" />
+
+<img width="1440" height="900" alt="Screenshot 2025-08-08 at 12 08 57 PM" src="https://github.com/user-attachments/assets/b8034f93-0588-493f-aae2-303c7c6283f5" />
 
 
 Sample Code
-<img width="1440" height="900" alt="Screenshot 2025-08-08 at 12 08 43 PM" src="https://github.com/user-attachments/assets/3baa9643-e2bd-4159-b95b-5b82767be933" />
+
+<img width="1440" height="900" alt="Screenshot 2025-08-08 at 12 08 43 PM" src="https://github.com/user-attachments/assets/e99d0065-73cd-4165-885c-3bf9ce1558d4" />
+
 
 ---
 
