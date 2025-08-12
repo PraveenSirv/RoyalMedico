@@ -17,6 +17,16 @@
         <option value="$PROJECT_DIR$/auth-service/pom.xml" />
         <option value="$PROJECT_DIR$/prescription-service/pom.xml" />
         <option value="$PROJECT_DIR$/royal-common-lib/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/admin-service/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/billing-service/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/payment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/notification-service/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/inventory-service/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/RoyalMedico-Backend/prescription-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

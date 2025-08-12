@@ -9,6 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
       </profile>
+      <profile name="Annotation profile for admin-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="admin-service" />
+      </profile>
       <profile name="Annotation profile for prescription-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -16,14 +26,13 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="payment-service" />
         <module name="inventory-service" />
+        <module name="payment-service" />
         <module name="prescription-service" />
         <module name="customer-service" />
         <module name="api-gateway" />
         <module name="order-service" />
         <module name="notification-service" />
-        <module name="admin-service" />
         <module name="billing-service" />
       </profile>
     </annotationProcessing>
