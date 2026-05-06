@@ -11,6 +11,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "Authentication", description = "Endpoints for user registration, login, and token refresh")
 public class AuthController {
 
+    @Autowired
     private final AuthService authService;
 
     @Operation(summary = "Register a new user")
