@@ -1,4 +1,4 @@
-package Royal_Medico.auth_service.entity;
+package royal_medico.auth_service.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

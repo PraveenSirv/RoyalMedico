@@ -1,4 +1,4 @@
-package Royal_Medico.auth_service.dto;
+package royal_medico.auth_service.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -1,6 +1,6 @@
-package Royal_Medico.auth_service.config;
+package royal_medico.auth_service.config;
 
-import Royal_Medico.auth_service.entity.User;
+import royal_medico.auth_service.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

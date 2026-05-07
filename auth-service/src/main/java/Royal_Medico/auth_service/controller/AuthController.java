@@ -1,10 +1,10 @@
-package Royal_Medico.auth_service.controller;
+package royal_medico.auth_service.controller;
 
-import Royal_Medico.auth_service.dto.AuthResponse;
-import Royal_Medico.auth_service.dto.LoginRequest;
-import Royal_Medico.auth_service.dto.RefreshRequest;
-import Royal_Medico.auth_service.dto.RegisterRequest;
-import Royal_Medico.auth_service.service.AuthService;
+import royal_medico.auth_service.dto.AuthResponse;
+import royal_medico.auth_service.dto.LoginRequest;
+import royal_medico.auth_service.dto.RefreshRequest;
+import royal_medico.auth_service.dto.RegisterRequest;
+import royal_medico.auth_service.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

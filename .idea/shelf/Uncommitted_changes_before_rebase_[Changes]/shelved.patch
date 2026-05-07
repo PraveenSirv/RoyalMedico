@@ -1,0 +1,1060 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a19db2fe-2b81-4e48-b91b-e00d86513ca9\" name=\"Changes\" comment=\"Auth Service Update - 05/06/2026\">\r\n      <change beforePath=\"$PROJECT_DIR$/auth-service/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/auth-service/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/auth-service/src/main/resources/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/auth-service/src/main/resources/application.yml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Enum\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;PraveenSirv&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/PraveenSirv/RoyalMedico.git&quot;,\r\n    &quot;accountId&quot;: &quot;bfcf0d0a-f228-4c92-95f5-47a9309adb73&quot;\r\n  }\r\n}</component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"MavenRunner\">\r\n    <option name=\"jreName\" value=\"21\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1,\r\n  &quot;fromUser&quot;: false\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3DLBOokwvg95CFDUg8kn15EK94L\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,\r\n    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,\r\n    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,\r\n    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\r\n    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,\r\n    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\praveen.KKSOFTAEC\\IdeaProjects\\RoyalMedico\\.idea\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"AuthServiceApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"$PROJECT_DIR$/../../../../Program Files/Java/jdk-21.0.11\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\r\n      <module name=\"auth-service\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"Royal_Medico.auth_service.AuthServiceApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a19db2fe-2b81-4e48-b91b-e00d86513ca9\" name=\"Changes\" comment=\"\" />\r\n      <created>1778051439462</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1778051439462</updated>\r\n      <workItem from=\"1778051440814\" duration=\"5131000\" />\r\n      <workItem from=\"1778059702182\" duration=\"4897000\" />\r\n      <workItem from=\"1778064667519\" duration=\"570000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Auth Service Update - 05/06/2026\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1778059929979</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1778059929980</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Delete order-service directory\" />\r\n    <MESSAGE value=\"Auth Service Update - 05/06/2026\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Auth Service Update - 05/06/2026\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/.idea/workspace.xml	(date 1778132708052)
+@@ -5,10 +5,28 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a19db2fe-2b81-4e48-b91b-e00d86513ca9" name="Changes" comment="Auth Service Update - 05/06/2026">
+-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -64,47 +82,55 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+-    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
+-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ModuleVcsDetector.initialDetectionPerformed": "true",
++    "RequestMappingsPanelOrder0": "0",
++    "RequestMappingsPanelOrder1": "1",
++    "RequestMappingsPanelWidth0": "75",
++    "RequestMappingsPanelWidth1": "75",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "Spring Boot.AuthServiceApplication.executor": "Run",
++    "codeWithMe.voiceChat.enabledByDefault": "false",
++    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
++    "git-widget-placeholder": "main",
++    "junie.onboarding.icon.badge.shown": "true",
++    "kotlin-language-version-configured": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "project.structure.last.edited": "Project",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
++    "to.speed.mode.migration.done": "true",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\praveen.KKSOFTAEC\IdeaProjects\RoyalMedico\.idea" />
+     </key>
+   </component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-21.0.11" />
+       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+       <module name="auth-service" />
+       <option name="SPRING_BOOT_MAIN_CLASS" value="Royal_Medico.auth_service.AuthServiceApplication" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
++      <module name="api-gateway" />
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.medical.gateway.GatewayApplication" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -119,7 +145,8 @@
+       <updated>1778051439462</updated>
+       <workItem from="1778051440814" duration="5131000" />
+       <workItem from="1778059702182" duration="4897000" />
+-      <workItem from="1778064667519" duration="570000" />
++      <workItem from="1778064667519" duration="1124000" />
++      <workItem from="1778129638547" duration="1720000" />
+     </task>
+     <task id="LOCAL-00001" summary="Auth Service Update - 05/06/2026">
+       <option name="closed" value="true" />
+@@ -129,7 +156,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1778059929980</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Auth Service Update - 05/06/2026">
++      <option name="closed" value="true" />
++      <created>1778065362744</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1778065362744</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.config;\r\n\r\nimport org.springframework.context.annotation.Bean;\r\nimport org.springframework.context.annotation.Configuration;\r\nimport org.springframework.security.config.annotation.web.builders.HttpSecurity;\r\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\r\nimport org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;\r\nimport org.springframework.security.crypto.password.PasswordEncoder;\r\nimport org.springframework.security.web.SecurityFilterChain;\r\n\r\n@Configuration\r\n@EnableWebSecurity\r\npublic class SecurityConfig {\r\n\r\n    @Bean\r\n    public PasswordEncoder passwordEncoder() {\r\n        return new BCryptPasswordEncoder(12);\r\n    }\r\n\r\n    @Bean\r\n    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {\r\n        http.csrf(csrf -> csrf.disable())\r\n                .authorizeHttpRequests(auth -> auth\r\n                        .requestMatchers(\"/auth/**\", \"/swagger-ui/**\", \"/v3/api-docs/**\")\r\n                        .permitAll()\r\n                        .anyRequest().authenticated()\r\n                );\r\n        return http.build();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java b/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java	(date 1778132225544)
+@@ -1,30 +1,0 @@
+-package Royal_Medico.auth_service.config;
+-
+-import org.springframework.context.annotation.Bean;
+-import org.springframework.context.annotation.Configuration;
+-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+-import org.springframework.security.crypto.password.PasswordEncoder;
+-import org.springframework.security.web.SecurityFilterChain;
+-
+-@Configuration
+-@EnableWebSecurity
+-public class SecurityConfig {
+-
+-    @Bean
+-    public PasswordEncoder passwordEncoder() {
+-        return new BCryptPasswordEncoder(12);
+-    }
+-
+-    @Bean
+-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+-        http.csrf(csrf -> csrf.disable())
+-                .authorizeHttpRequests(auth -> auth
+-                        .requestMatchers("/auth/**", "/swagger-ui/**", "/v3/api-docs/**")
+-                        .permitAll()
+-                        .anyRequest().authenticated()
+-                );
+-        return http.build();
+-    }
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.dto;\r\n\r\nimport jakarta.validation.constraints.Email;\r\nimport jakarta.validation.constraints.NotBlank;\r\nimport lombok.Getter;\r\nimport lombok.Setter;\r\n\r\n@Getter\r\n@Setter\r\npublic class LoginRequest {\r\n    @NotBlank(message = \"Email is required\")\r\n    @Email(message = \"Email should be valid\")\r\n    private String email;\r\n    \r\n    @NotBlank(message = \"Password is required\")\r\n    private String password;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java b/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java	(date 1778132225546)
+@@ -1,17 +1,0 @@
+-package Royal_Medico.auth_service.dto;
+-
+-import jakarta.validation.constraints.Email;
+-import jakarta.validation.constraints.NotBlank;
+-import lombok.Getter;
+-import lombok.Setter;
+-
+-@Getter
+-@Setter
+-public class LoginRequest {
+-    @NotBlank(message = "Email is required")
+-    @Email(message = "Email should be valid")
+-    private String email;
+-    
+-    @NotBlank(message = "Password is required")
+-    private String password;
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.util;\r\n\r\nimport io.jsonwebtoken.Claims;\r\nimport io.jsonwebtoken.Jwts;\r\nimport io.jsonwebtoken.SignatureAlgorithm;\r\nimport org.springframework.stereotype.Component;\r\n\r\nimport java.security.KeyPair;\r\nimport java.security.KeyPairGenerator;\r\nimport java.security.NoSuchAlgorithmException;\r\nimport java.security.interfaces.RSAPrivateKey;\r\nimport java.security.interfaces.RSAPublicKey;\r\nimport java.util.Date;\r\nimport java.util.UUID;\r\n\r\n@Component\r\npublic class JwtUtil {\r\n\r\n    private final RSAPrivateKey privateKey;\r\n    private final RSAPublicKey publicKey;\r\n\r\n    private static final long ACCESS_TOKEN_EXPIRATION_MS = 15 * 60 * 1000; // 15 minutes\r\n\r\n    public JwtUtil() throws NoSuchAlgorithmException {\r\n        KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(\"RSA\");\r\n        keyPairGenerator.initialize(2048);\r\n        KeyPair keyPair = keyPairGenerator.generateKeyPair();\r\n        this.privateKey = (RSAPrivateKey) keyPair.getPrivate();\r\n        this.publicKey = (RSAPublicKey) keyPair.getPublic();\r\n    }\r\n\r\n    public String generateAccessToken(String email, String role) {\r\n        return Jwts.builder()\r\n                .setSubject(email)\r\n                .claim(\"role\", role)\r\n                .setIssuedAt(new Date())\r\n                .setExpiration(new Date(System.currentTimeMillis() + ACCESS_TOKEN_EXPIRATION_MS))\r\n                .signWith(privateKey, SignatureAlgorithm.RS256)\r\n                .compact();\r\n    }\r\n\r\n    public String generateRefreshToken() {\r\n        return UUID.randomUUID().toString();\r\n    }\r\n\r\n    public String extractEmail(String token) {\r\n        return getClaims(token).getSubject();\r\n    }\r\n\r\n    public String extractRole(String token) {\r\n        return getClaims(token).get(\"role\", String.class);\r\n    }\r\n\r\n    private Claims getClaims(String token) {\r\n        return Jwts.parserBuilder()\r\n                .setSigningKey(publicKey)\r\n                .build()\r\n                .parseClaimsJws(token)\r\n                .getBody();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java b/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java	(date 1778132225554)
+@@ -1,61 +1,0 @@
+-package Royal_Medico.auth_service.util;
+-
+-import io.jsonwebtoken.Claims;
+-import io.jsonwebtoken.Jwts;
+-import io.jsonwebtoken.SignatureAlgorithm;
+-import org.springframework.stereotype.Component;
+-
+-import java.security.KeyPair;
+-import java.security.KeyPairGenerator;
+-import java.security.NoSuchAlgorithmException;
+-import java.security.interfaces.RSAPrivateKey;
+-import java.security.interfaces.RSAPublicKey;
+-import java.util.Date;
+-import java.util.UUID;
+-
+-@Component
+-public class JwtUtil {
+-
+-    private final RSAPrivateKey privateKey;
+-    private final RSAPublicKey publicKey;
+-
+-    private static final long ACCESS_TOKEN_EXPIRATION_MS = 15 * 60 * 1000; // 15 minutes
+-
+-    public JwtUtil() throws NoSuchAlgorithmException {
+-        KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
+-        keyPairGenerator.initialize(2048);
+-        KeyPair keyPair = keyPairGenerator.generateKeyPair();
+-        this.privateKey = (RSAPrivateKey) keyPair.getPrivate();
+-        this.publicKey = (RSAPublicKey) keyPair.getPublic();
+-    }
+-
+-    public String generateAccessToken(String email, String role) {
+-        return Jwts.builder()
+-                .setSubject(email)
+-                .claim("role", role)
+-                .setIssuedAt(new Date())
+-                .setExpiration(new Date(System.currentTimeMillis() + ACCESS_TOKEN_EXPIRATION_MS))
+-                .signWith(privateKey, SignatureAlgorithm.RS256)
+-                .compact();
+-    }
+-
+-    public String generateRefreshToken() {
+-        return UUID.randomUUID().toString();
+-    }
+-
+-    public String extractEmail(String token) {
+-        return getClaims(token).getSubject();
+-    }
+-
+-    public String extractRole(String token) {
+-        return getClaims(token).get("role", String.class);
+-    }
+-
+-    private Claims getClaims(String token) {
+-        return Jwts.parserBuilder()
+-                .setSigningKey(publicKey)
+-                .build()
+-                .parseClaimsJws(token)
+-                .getBody();
+-    }
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.dto;\r\n\r\nimport jakarta.validation.constraints.Email;\r\nimport jakarta.validation.constraints.NotBlank;\r\nimport jakarta.validation.constraints.Pattern;\r\nimport jakarta.validation.constraints.Size;\r\nimport lombok.Getter;\r\nimport lombok.Setter;\r\n\r\n@Getter\r\n@Setter\r\npublic class RegisterRequest {\r\n    @NotBlank(message = \"Email is required\")\r\n    @Email(message = \"Email should be valid\")\r\n    private String email;\r\n\r\n    @NotBlank(message = \"Password is required\")\r\n    @Size(min = 8, message = \"Password must be at least 8 characters long\")\r\n    @Pattern(regexp = \"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$\", message = \"Password must contain at least one digit, one lowercase, one uppercase, and one special character\")\r\n    private String password;\r\n\r\n    @NotBlank(message = \"Name is required\")\r\n    private String name;\r\n\r\n    @NotBlank(message = \"Role is required\")\r\n    private String role; // ADMIN / PHARMACIST / CUSTOMER\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java b/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java	(date 1778132225549)
+@@ -1,27 +1,0 @@
+-package Royal_Medico.auth_service.dto;
+-
+-import jakarta.validation.constraints.Email;
+-import jakarta.validation.constraints.NotBlank;
+-import jakarta.validation.constraints.Pattern;
+-import jakarta.validation.constraints.Size;
+-import lombok.Getter;
+-import lombok.Setter;
+-
+-@Getter
+-@Setter
+-public class RegisterRequest {
+-    @NotBlank(message = "Email is required")
+-    @Email(message = "Email should be valid")
+-    private String email;
+-
+-    @NotBlank(message = "Password is required")
+-    @Size(min = 8, message = "Password must be at least 8 characters long")
+-    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$", message = "Password must contain at least one digit, one lowercase, one uppercase, and one special character")
+-    private String password;
+-
+-    @NotBlank(message = "Name is required")
+-    private String name;
+-
+-    @NotBlank(message = "Role is required")
+-    private String role; // ADMIN / PHARMACIST / CUSTOMER
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.dto;\r\n\r\nimport lombok.AllArgsConstructor;\r\nimport lombok.Getter;\r\nimport lombok.Setter;\r\n\r\n@Getter\r\n@Setter\r\n@AllArgsConstructor\r\npublic class AuthResponse {\r\n    private String accessToken;\r\n    private String refreshToken;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java b/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java	(date 1778132225545)
+@@ -1,13 +1,0 @@
+-package Royal_Medico.auth_service.dto;
+-
+-import lombok.AllArgsConstructor;
+-import lombok.Getter;
+-import lombok.Setter;
+-
+-@Getter
+-@Setter
+-@AllArgsConstructor
+-public class AuthResponse {
+-    private String accessToken;
+-    private String refreshToken;
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.entity;\r\n\r\nimport jakarta.persistence.*;\r\nimport lombok.Getter;\r\nimport lombok.Setter;\r\nimport org.hibernate.annotations.SQLDelete;\r\nimport org.hibernate.annotations.Where;\r\nimport org.springframework.data.annotation.CreatedBy;\r\nimport org.springframework.data.annotation.CreatedDate;\r\nimport org.springframework.data.annotation.LastModifiedDate;\r\nimport org.springframework.data.jpa.domain.support.AuditingEntityListener;\r\n\r\nimport java.time.LocalDateTime;\r\n\r\n@Entity\r\n@Table(name = \"users\")\r\n@Getter\r\n@Setter\r\n@EntityListeners(AuditingEntityListener.class)\r\n@SQLDelete(sql = \"UPDATE users SET is_active = false WHERE id=?\")\r\n@Where(clause = \"is_active=true\")\r\npublic class User {\r\n\r\n    @Id\r\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\r\n    private Long id;\r\n\r\n    @Column(unique = true, nullable = false)\r\n    private String email;\r\n\r\n    @Column(nullable = false)\r\n    private String password;\r\n\r\n    @Column(nullable = false)\r\n    private String name;\r\n\r\n    @Enumerated(EnumType.STRING)\r\n    @Column(nullable = false)\r\n    private Role role;\r\n\r\n    @Column(name = \"is_active\", nullable = false)\r\n    private boolean isActive = true;\r\n\r\n    @Column(name = \"failed_login_attempts\")\r\n    private int failedLoginAttempts = 0;\r\n\r\n    @Column(name = \"account_locked\")\r\n    private boolean accountLocked = false;\r\n\r\n    @CreatedDate\r\n    @Column(name = \"created_at\", updatable = false)\r\n    private LocalDateTime createdAt;\r\n\r\n    @LastModifiedDate\r\n    @Column(name = \"updated_at\")\r\n    private LocalDateTime updatedAt;\r\n\r\n    @CreatedBy\r\n    @Column(name = \"created_by\")\r\n    private String createdBy;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java b/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java	(date 1778132225551)
+@@ -1,61 +1,0 @@
+-package Royal_Medico.auth_service.entity;
+-
+-import jakarta.persistence.*;
+-import lombok.Getter;
+-import lombok.Setter;
+-import org.hibernate.annotations.SQLDelete;
+-import org.hibernate.annotations.Where;
+-import org.springframework.data.annotation.CreatedBy;
+-import org.springframework.data.annotation.CreatedDate;
+-import org.springframework.data.annotation.LastModifiedDate;
+-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+-
+-import java.time.LocalDateTime;
+-
+-@Entity
+-@Table(name = "users")
+-@Getter
+-@Setter
+-@EntityListeners(AuditingEntityListener.class)
+-@SQLDelete(sql = "UPDATE users SET is_active = false WHERE id=?")
+-@Where(clause = "is_active=true")
+-public class User {
+-
+-    @Id
+-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+-    private Long id;
+-
+-    @Column(unique = true, nullable = false)
+-    private String email;
+-
+-    @Column(nullable = false)
+-    private String password;
+-
+-    @Column(nullable = false)
+-    private String name;
+-
+-    @Enumerated(EnumType.STRING)
+-    @Column(nullable = false)
+-    private Role role;
+-
+-    @Column(name = "is_active", nullable = false)
+-    private boolean isActive = true;
+-
+-    @Column(name = "failed_login_attempts")
+-    private int failedLoginAttempts = 0;
+-
+-    @Column(name = "account_locked")
+-    private boolean accountLocked = false;
+-
+-    @CreatedDate
+-    @Column(name = "created_at", updatable = false)
+-    private LocalDateTime createdAt;
+-
+-    @LastModifiedDate
+-    @Column(name = "updated_at")
+-    private LocalDateTime updatedAt;
+-
+-    @CreatedBy
+-    @Column(name = "created_by")
+-    private String createdBy;
+-}
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1778131523292)
++++ b/.idea/encodings.xml	(date 1778131523292)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/auth-service/src/main/java" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	(date 1778131523304)
++++ b/.idea/jarRepositories.xml	(date 1778131523304)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.controller;\r\n\r\nimport Royal_Medico.auth_service.dto.AuthResponse;\r\nimport Royal_Medico.auth_service.dto.LoginRequest;\r\nimport Royal_Medico.auth_service.dto.RefreshRequest;\r\nimport Royal_Medico.auth_service.dto.RegisterRequest;\r\nimport Royal_Medico.auth_service.service.AuthService;\r\nimport io.swagger.v3.oas.annotations.Operation;\r\nimport io.swagger.v3.oas.annotations.responses.ApiResponse;\r\nimport io.swagger.v3.oas.annotations.responses.ApiResponses;\r\nimport io.swagger.v3.oas.annotations.tags.Tag;\r\nimport jakarta.validation.Valid;\r\nimport lombok.RequiredArgsConstructor;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.http.ResponseEntity;\r\nimport org.springframework.web.bind.annotation.*;\r\n\r\n@RestController\r\n@RequestMapping(\"/auth\")\r\n@RequiredArgsConstructor\r\n@Tag(name = \"Authentication\", description = \"Endpoints for user registration, login, and token refresh\")\r\npublic class AuthController {\r\n\r\n    @Autowired\r\n    private final AuthService authService;\r\n\r\n    @Operation(summary = \"Register a new user\")\r\n    @ApiResponses(value = {\r\n            @ApiResponse(responseCode = \"200\", description = \"User registered successfully\"),\r\n            @ApiResponse(responseCode = \"400\", description = \"Invalid input or email already exists\")\r\n    })\r\n    @PostMapping(\"/register\")\r\n    public ResponseEntity<AuthResponse> register(@RequestBody @Valid RegisterRequest request) {\r\n        return ResponseEntity.ok(authService.register(request));\r\n    }\r\n\r\n    @Operation(summary = \"Login user\")\r\n    @ApiResponses(value = {\r\n            @ApiResponse(responseCode = \"200\", description = \"Successful login\"),\r\n            @ApiResponse(responseCode = \"401\", description = \"Bad credentials or locked account\")\r\n    })\r\n    @PostMapping(\"/login\")\r\n    public ResponseEntity<AuthResponse> login(@RequestBody @Valid LoginRequest request) {\r\n        return ResponseEntity.ok(authService.login(request));\r\n    }\r\n\r\n    @Operation(summary = \"Refresh access token\")\r\n    @ApiResponses(value = {\r\n            @ApiResponse(responseCode = \"200\", description = \"Token refreshed successfully\"),\r\n            @ApiResponse(responseCode = \"401\", description = \"Invalid or expired refresh token\")\r\n    })\r\n    @PostMapping(\"/refresh\")\r\n    public ResponseEntity<AuthResponse> refresh(@RequestBody @Valid RefreshRequest request) {\r\n        return ResponseEntity.ok(authService.refresh(request.getRefreshToken()));\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java b/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java	(date 1778132225545)
+@@ -1,56 +1,0 @@
+-package Royal_Medico.auth_service.controller;
+-
+-import Royal_Medico.auth_service.dto.AuthResponse;
+-import Royal_Medico.auth_service.dto.LoginRequest;
+-import Royal_Medico.auth_service.dto.RefreshRequest;
+-import Royal_Medico.auth_service.dto.RegisterRequest;
+-import Royal_Medico.auth_service.service.AuthService;
+-import io.swagger.v3.oas.annotations.Operation;
+-import io.swagger.v3.oas.annotations.responses.ApiResponse;
+-import io.swagger.v3.oas.annotations.responses.ApiResponses;
+-import io.swagger.v3.oas.annotations.tags.Tag;
+-import jakarta.validation.Valid;
+-import lombok.RequiredArgsConstructor;
+-import org.springframework.beans.factory.annotation.Autowired;
+-import org.springframework.http.ResponseEntity;
+-import org.springframework.web.bind.annotation.*;
+-
+-@RestController
+-@RequestMapping("/auth")
+-@RequiredArgsConstructor
+-@Tag(name = "Authentication", description = "Endpoints for user registration, login, and token refresh")
+-public class AuthController {
+-
+-    @Autowired
+-    private final AuthService authService;
+-
+-    @Operation(summary = "Register a new user")
+-    @ApiResponses(value = {
+-            @ApiResponse(responseCode = "200", description = "User registered successfully"),
+-            @ApiResponse(responseCode = "400", description = "Invalid input or email already exists")
+-    })
+-    @PostMapping("/register")
+-    public ResponseEntity<AuthResponse> register(@RequestBody @Valid RegisterRequest request) {
+-        return ResponseEntity.ok(authService.register(request));
+-    }
+-
+-    @Operation(summary = "Login user")
+-    @ApiResponses(value = {
+-            @ApiResponse(responseCode = "200", description = "Successful login"),
+-            @ApiResponse(responseCode = "401", description = "Bad credentials or locked account")
+-    })
+-    @PostMapping("/login")
+-    public ResponseEntity<AuthResponse> login(@RequestBody @Valid LoginRequest request) {
+-        return ResponseEntity.ok(authService.login(request));
+-    }
+-
+-    @Operation(summary = "Refresh access token")
+-    @ApiResponses(value = {
+-            @ApiResponse(responseCode = "200", description = "Token refreshed successfully"),
+-            @ApiResponse(responseCode = "401", description = "Invalid or expired refresh token")
+-    })
+-    @PostMapping("/refresh")
+-    public ResponseEntity<AuthResponse> refresh(@RequestBody @Valid RefreshRequest request) {
+-        return ResponseEntity.ok(authService.refresh(request.getRefreshToken()));
+-    }
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.config;\r\n\r\nimport Royal_Medico.auth_service.entity.User;\r\nimport org.springframework.security.core.GrantedAuthority;\r\nimport org.springframework.security.core.authority.SimpleGrantedAuthority;\r\nimport org.springframework.security.core.userdetails.UserDetails;\r\n\r\nimport java.util.Collection;\r\nimport java.util.List;\r\n\r\npublic class UserPrincipal implements UserDetails {\r\n\r\n    private final User user;\r\n\r\n    public UserPrincipal(User user) {\r\n        this.user = user;\r\n    }\r\n\r\n    @Override\r\n    public Collection<? extends GrantedAuthority> getAuthorities() {\r\n        return List.of(new SimpleGrantedAuthority(user.getRole().name()));\r\n    }\r\n\r\n    @Override\r\n    public String getPassword() {\r\n        return user.getPassword();\r\n    }\r\n\r\n    @Override\r\n    public String getUsername() {\r\n        return user.getEmail();\r\n    }\r\n\r\n    @Override\r\n    public boolean isAccountNonExpired() {\r\n        return true;\r\n    }\r\n\r\n    @Override\r\n    public boolean isAccountNonLocked() {\r\n        return !user.isAccountLocked();\r\n    }\r\n\r\n    @Override\r\n    public boolean isCredentialsNonExpired() {\r\n        return true;\r\n    }\r\n\r\n    @Override\r\n    public boolean isEnabled() {\r\n        return user.isActive();\r\n    }\r\n    \r\n    public Long getId() {\r\n        return user.getId();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java b/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java	(date 1778132225544)
+@@ -1,57 +1,0 @@
+-package Royal_Medico.auth_service.config;
+-
+-import Royal_Medico.auth_service.entity.User;
+-import org.springframework.security.core.GrantedAuthority;
+-import org.springframework.security.core.authority.SimpleGrantedAuthority;
+-import org.springframework.security.core.userdetails.UserDetails;
+-
+-import java.util.Collection;
+-import java.util.List;
+-
+-public class UserPrincipal implements UserDetails {
+-
+-    private final User user;
+-
+-    public UserPrincipal(User user) {
+-        this.user = user;
+-    }
+-
+-    @Override
+-    public Collection<? extends GrantedAuthority> getAuthorities() {
+-        return List.of(new SimpleGrantedAuthority(user.getRole().name()));
+-    }
+-
+-    @Override
+-    public String getPassword() {
+-        return user.getPassword();
+-    }
+-
+-    @Override
+-    public String getUsername() {
+-        return user.getEmail();
+-    }
+-
+-    @Override
+-    public boolean isAccountNonExpired() {
+-        return true;
+-    }
+-
+-    @Override
+-    public boolean isAccountNonLocked() {
+-        return !user.isAccountLocked();
+-    }
+-
+-    @Override
+-    public boolean isCredentialsNonExpired() {
+-        return true;
+-    }
+-
+-    @Override
+-    public boolean isEnabled() {
+-        return user.isActive();
+-    }
+-    
+-    public Long getId() {
+-        return user.getId();
+-    }
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.config;\r\n\r\nimport org.springframework.context.annotation.Configuration;\r\nimport org.springframework.data.jpa.repository.config.EnableJpaAuditing;\r\n\r\n@Configuration\r\n@EnableJpaAuditing\r\npublic class JpaAuditingConfig {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java b/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java	(date 1778132225543)
+@@ -1,9 +1,0 @@
+-package Royal_Medico.auth_service.config;
+-
+-import org.springframework.context.annotation.Configuration;
+-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+-
+-@Configuration
+-@EnableJpaAuditing
+-public class JpaAuditingConfig {
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.service;\r\n\r\nimport Royal_Medico.auth_service.dto.AuthResponse;\r\nimport Royal_Medico.auth_service.dto.LoginRequest;\r\nimport Royal_Medico.auth_service.dto.RegisterRequest;\r\nimport Royal_Medico.auth_service.entity.RefreshToken;\r\nimport Royal_Medico.auth_service.entity.Role;\r\nimport Royal_Medico.auth_service.entity.User;\r\nimport Royal_Medico.auth_service.repository.RefreshTokenRepository;\r\nimport Royal_Medico.auth_service.repository.UserRepository;\r\nimport Royal_Medico.auth_service.util.JwtUtil;\r\nimport lombok.RequiredArgsConstructor;\r\nimport org.springframework.security.authentication.BadCredentialsException;\r\nimport org.springframework.security.authentication.LockedException;\r\nimport org.springframework.security.crypto.password.PasswordEncoder;\r\nimport org.springframework.stereotype.Service;\r\nimport org.springframework.transaction.annotation.Transactional;\r\n\r\nimport java.time.LocalDateTime;\r\n\r\n@Service\r\n@RequiredArgsConstructor\r\npublic class AuthService {\r\n\r\n    private final UserRepository userRepository;\r\n    private final RefreshTokenRepository refreshTokenRepository;\r\n    private final PasswordEncoder passwordEncoder;\r\n    private final JwtUtil jwtUtil;\r\n\r\n    private static final int MAX_FAILED_ATTEMPTS = 5;\r\n    private static final long REFRESH_TOKEN_VALIDITY_DAYS = 7;\r\n\r\n    @Transactional\r\n    public AuthResponse register(RegisterRequest request) {\r\n        if (userRepository.findByEmail(request.getEmail()).isPresent()) {\r\n            throw new RuntimeException(\"Email already registered\");\r\n        }\r\n\r\n        User user = new User();\r\n        user.setEmail(request.getEmail());\r\n        user.setPassword(passwordEncoder.encode(request.getPassword()));\r\n        user.setName(request.getName());\r\n        user.setRole(Role.valueOf(request.getRole()));\r\n\r\n        userRepository.save(user);\r\n\r\n        return createAuthResponse(user);\r\n    }\r\n\r\n    @Transactional\r\n    public AuthResponse login(LoginRequest request) {\r\n        User user = userRepository.findByEmail(request.getEmail())\r\n                .orElseThrow(() -> new BadCredentialsException(\"Bad credentials\"));\r\n\r\n        if (!user.isActive()) {\r\n            throw new LockedException(\"Account is disabled\");\r\n        }\r\n\r\n        if (user.isAccountLocked()) {\r\n            throw new LockedException(\"Account is locked due to too many failed attempts\");\r\n        }\r\n\r\n        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {\r\n            int newAttempts = user.getFailedLoginAttempts() + 1;\r\n            user.setFailedLoginAttempts(newAttempts);\r\n            if (newAttempts >= MAX_FAILED_ATTEMPTS) {\r\n                user.setAccountLocked(true);\r\n            }\r\n            userRepository.save(user);\r\n            throw new BadCredentialsException(\"Bad credentials\");\r\n        }\r\n\r\n        // Successful login, reset failed attempts\r\n        if (user.getFailedLoginAttempts() > 0) {\r\n            user.setFailedLoginAttempts(0);\r\n            userRepository.save(user);\r\n        }\r\n\r\n        return createAuthResponse(user);\r\n    }\r\n\r\n    @Transactional\r\n    public AuthResponse refresh(String refreshTokenStr) {\r\n        RefreshToken refreshToken = refreshTokenRepository.findByToken(refreshTokenStr)\r\n                .orElseThrow(() -> new RuntimeException(\"Invalid refresh token\"));\r\n\r\n        if (refreshToken.getExpiryDate().isBefore(LocalDateTime.now())) {\r\n            refreshTokenRepository.delete(refreshToken);\r\n            throw new RuntimeException(\"Refresh token expired\");\r\n        }\r\n\r\n        User user = refreshToken.getUser();\r\n        \r\n        // Optionally rotate refresh token\r\n        refreshTokenRepository.delete(refreshToken);\r\n        \r\n        return createAuthResponse(user);\r\n    }\r\n\r\n    private AuthResponse createAuthResponse(User user) {\r\n        String accessToken = jwtUtil.generateAccessToken(user.getEmail(), user.getRole().name());\r\n        String refreshTokenStr = jwtUtil.generateRefreshToken();\r\n\r\n        RefreshToken refreshToken = new RefreshToken();\r\n        refreshToken.setToken(refreshTokenStr);\r\n        refreshToken.setUser(user);\r\n        refreshToken.setExpiryDate(LocalDateTime.now().plusDays(REFRESH_TOKEN_VALIDITY_DAYS));\r\n        \r\n        // Remove old tokens\r\n        refreshTokenRepository.deleteByUser_Id(user.getId());\r\n        refreshTokenRepository.save(refreshToken);\r\n\r\n        return new AuthResponse(accessToken, refreshTokenStr);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java b/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java	(date 1778132225554)
+@@ -1,115 +1,0 @@
+-package Royal_Medico.auth_service.service;
+-
+-import Royal_Medico.auth_service.dto.AuthResponse;
+-import Royal_Medico.auth_service.dto.LoginRequest;
+-import Royal_Medico.auth_service.dto.RegisterRequest;
+-import Royal_Medico.auth_service.entity.RefreshToken;
+-import Royal_Medico.auth_service.entity.Role;
+-import Royal_Medico.auth_service.entity.User;
+-import Royal_Medico.auth_service.repository.RefreshTokenRepository;
+-import Royal_Medico.auth_service.repository.UserRepository;
+-import Royal_Medico.auth_service.util.JwtUtil;
+-import lombok.RequiredArgsConstructor;
+-import org.springframework.security.authentication.BadCredentialsException;
+-import org.springframework.security.authentication.LockedException;
+-import org.springframework.security.crypto.password.PasswordEncoder;
+-import org.springframework.stereotype.Service;
+-import org.springframework.transaction.annotation.Transactional;
+-
+-import java.time.LocalDateTime;
+-
+-@Service
+-@RequiredArgsConstructor
+-public class AuthService {
+-
+-    private final UserRepository userRepository;
+-    private final RefreshTokenRepository refreshTokenRepository;
+-    private final PasswordEncoder passwordEncoder;
+-    private final JwtUtil jwtUtil;
+-
+-    private static final int MAX_FAILED_ATTEMPTS = 5;
+-    private static final long REFRESH_TOKEN_VALIDITY_DAYS = 7;
+-
+-    @Transactional
+-    public AuthResponse register(RegisterRequest request) {
+-        if (userRepository.findByEmail(request.getEmail()).isPresent()) {
+-            throw new RuntimeException("Email already registered");
+-        }
+-
+-        User user = new User();
+-        user.setEmail(request.getEmail());
+-        user.setPassword(passwordEncoder.encode(request.getPassword()));
+-        user.setName(request.getName());
+-        user.setRole(Role.valueOf(request.getRole()));
+-
+-        userRepository.save(user);
+-
+-        return createAuthResponse(user);
+-    }
+-
+-    @Transactional
+-    public AuthResponse login(LoginRequest request) {
+-        User user = userRepository.findByEmail(request.getEmail())
+-                .orElseThrow(() -> new BadCredentialsException("Bad credentials"));
+-
+-        if (!user.isActive()) {
+-            throw new LockedException("Account is disabled");
+-        }
+-
+-        if (user.isAccountLocked()) {
+-            throw new LockedException("Account is locked due to too many failed attempts");
+-        }
+-
+-        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
+-            int newAttempts = user.getFailedLoginAttempts() + 1;
+-            user.setFailedLoginAttempts(newAttempts);
+-            if (newAttempts >= MAX_FAILED_ATTEMPTS) {
+-                user.setAccountLocked(true);
+-            }
+-            userRepository.save(user);
+-            throw new BadCredentialsException("Bad credentials");
+-        }
+-
+-        // Successful login, reset failed attempts
+-        if (user.getFailedLoginAttempts() > 0) {
+-            user.setFailedLoginAttempts(0);
+-            userRepository.save(user);
+-        }
+-
+-        return createAuthResponse(user);
+-    }
+-
+-    @Transactional
+-    public AuthResponse refresh(String refreshTokenStr) {
+-        RefreshToken refreshToken = refreshTokenRepository.findByToken(refreshTokenStr)
+-                .orElseThrow(() -> new RuntimeException("Invalid refresh token"));
+-
+-        if (refreshToken.getExpiryDate().isBefore(LocalDateTime.now())) {
+-            refreshTokenRepository.delete(refreshToken);
+-            throw new RuntimeException("Refresh token expired");
+-        }
+-
+-        User user = refreshToken.getUser();
+-        
+-        // Optionally rotate refresh token
+-        refreshTokenRepository.delete(refreshToken);
+-        
+-        return createAuthResponse(user);
+-    }
+-
+-    private AuthResponse createAuthResponse(User user) {
+-        String accessToken = jwtUtil.generateAccessToken(user.getEmail(), user.getRole().name());
+-        String refreshTokenStr = jwtUtil.generateRefreshToken();
+-
+-        RefreshToken refreshToken = new RefreshToken();
+-        refreshToken.setToken(refreshTokenStr);
+-        refreshToken.setUser(user);
+-        refreshToken.setExpiryDate(LocalDateTime.now().plusDays(REFRESH_TOKEN_VALIDITY_DAYS));
+-        
+-        // Remove old tokens
+-        refreshTokenRepository.deleteByUser_Id(user.getId());
+-        refreshTokenRepository.save(refreshToken);
+-
+-        return new AuthResponse(accessToken, refreshTokenStr);
+-    }
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service;\r\n\r\nimport org.springframework.boot.SpringApplication;\r\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\r\n\r\n@SpringBootApplication\r\npublic class AuthServiceApplication {\r\n\r\n\tpublic static void main(String[] args) {\r\n\t\tSpringApplication.run(AuthServiceApplication.class, args);\r\n\t}\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java b/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java	(date 1778132225541)
+@@ -1,13 +1,0 @@
+-package Royal_Medico.auth_service;
+-
+-import org.springframework.boot.SpringApplication;
+-import org.springframework.boot.autoconfigure.SpringBootApplication;
+-
+-@SpringBootApplication
+-public class AuthServiceApplication {
+-
+-	public static void main(String[] args) {
+-		SpringApplication.run(AuthServiceApplication.class, args);
+-	}
+-
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.entity;\r\n\r\npublic enum Role {\r\n    ADMIN,\r\n    PHARMACIST,\r\n    CUSTOMER\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java b/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java	(date 1778132225551)
+@@ -1,7 +1,0 @@
+-package Royal_Medico.auth_service.entity;
+-
+-public enum Role {
+-    ADMIN,
+-    PHARMACIST,
+-    CUSTOMER
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.repository;\r\n\r\nimport Royal_Medico.auth_service.entity.RefreshToken;\r\nimport org.springframework.data.jpa.repository.JpaRepository;\r\nimport org.springframework.stereotype.Repository;\r\n\r\nimport java.util.Optional;\r\n\r\n@Repository\r\npublic interface RefreshTokenRepository extends JpaRepository<RefreshToken, Long> {\r\n    Optional<RefreshToken> findByToken(String token);\r\n    void deleteByUser_Id(Long userId);\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java b/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java	(date 1778132225552)
+@@ -1,13 +1,0 @@
+-package Royal_Medico.auth_service.repository;
+-
+-import Royal_Medico.auth_service.entity.RefreshToken;
+-import org.springframework.data.jpa.repository.JpaRepository;
+-import org.springframework.stereotype.Repository;
+-
+-import java.util.Optional;
+-
+-@Repository
+-public interface RefreshTokenRepository extends JpaRepository<RefreshToken, Long> {
+-    Optional<RefreshToken> findByToken(String token);
+-    void deleteByUser_Id(Long userId);
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.dto;\r\n\r\nimport jakarta.validation.constraints.NotBlank;\r\nimport lombok.Getter;\r\nimport lombok.Setter;\r\n\r\n@Getter\r\n@Setter\r\npublic class RefreshRequest {\r\n    @NotBlank(message = \"Refresh token is required\")\r\n    private String refreshToken;\r\n\r\n    public String getRefreshToken() {\r\n        return refreshToken;\r\n    }\r\n\r\n    public void setRefreshToken(String refreshToken) {\r\n        this.refreshToken = refreshToken;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java b/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java	(date 1778132225548)
+@@ -1,20 +1,0 @@
+-package Royal_Medico.auth_service.dto;
+-
+-import jakarta.validation.constraints.NotBlank;
+-import lombok.Getter;
+-import lombok.Setter;
+-
+-@Getter
+-@Setter
+-public class RefreshRequest {
+-    @NotBlank(message = "Refresh token is required")
+-    private String refreshToken;
+-
+-    public String getRefreshToken() {
+-        return refreshToken;
+-    }
+-
+-    public void setRefreshToken(String refreshToken) {
+-        this.refreshToken = refreshToken;
+-    }
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.entity;\r\n\r\nimport jakarta.persistence.*;\r\nimport lombok.Getter;\r\nimport lombok.Setter;\r\nimport org.springframework.data.annotation.CreatedDate;\r\nimport org.springframework.data.jpa.domain.support.AuditingEntityListener;\r\n\r\nimport java.time.LocalDateTime;\r\n\r\n@Entity\r\n@Table(name = \"refresh_tokens\")\r\n@Getter\r\n@Setter\r\n@EntityListeners(AuditingEntityListener.class)\r\npublic class RefreshToken {\r\n\r\n    @Id\r\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\r\n    private Long id;\r\n\r\n    @Column(nullable = false, unique = true)\r\n    private String token;\r\n\r\n    @ManyToOne(fetch = FetchType.LAZY)\r\n    @JoinColumn(name = \"user_id\", nullable = false)\r\n    private User user;\r\n\r\n    @Column(name = \"expiry_date\", nullable = false)\r\n    private LocalDateTime expiryDate;\r\n\r\n    @CreatedDate\r\n    @Column(name = \"created_at\", updatable = false)\r\n    private LocalDateTime createdAt;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java b/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java	(date 1778132225550)
+@@ -1,35 +1,0 @@
+-package Royal_Medico.auth_service.entity;
+-
+-import jakarta.persistence.*;
+-import lombok.Getter;
+-import lombok.Setter;
+-import org.springframework.data.annotation.CreatedDate;
+-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+-
+-import java.time.LocalDateTime;
+-
+-@Entity
+-@Table(name = "refresh_tokens")
+-@Getter
+-@Setter
+-@EntityListeners(AuditingEntityListener.class)
+-public class RefreshToken {
+-
+-    @Id
+-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+-    private Long id;
+-
+-    @Column(nullable = false, unique = true)
+-    private String token;
+-
+-    @ManyToOne(fetch = FetchType.LAZY)
+-    @JoinColumn(name = "user_id", nullable = false)
+-    private User user;
+-
+-    @Column(name = "expiry_date", nullable = false)
+-    private LocalDateTime expiryDate;
+-
+-    @CreatedDate
+-    @Column(name = "created_at", updatable = false)
+-    private LocalDateTime createdAt;
+-}
+Index: auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.exception;\r\n\r\nimport org.springframework.http.HttpStatus;\r\nimport org.springframework.http.ResponseEntity;\r\nimport org.springframework.security.authentication.BadCredentialsException;\r\nimport org.springframework.security.authentication.LockedException;\r\nimport org.springframework.validation.FieldError;\r\nimport org.springframework.web.bind.MethodArgumentNotValidException;\r\nimport org.springframework.web.bind.annotation.ExceptionHandler;\r\nimport org.springframework.web.bind.annotation.RestControllerAdvice;\r\n\r\nimport java.time.LocalDateTime;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\n@RestControllerAdvice\r\npublic class GlobalExceptionHandler {\r\n\r\n    @ExceptionHandler(MethodArgumentNotValidException.class)\r\n    public ResponseEntity<Map<String, Object>> handleValidationExceptions(MethodArgumentNotValidException ex) {\r\n        Map<String, Object> response = new HashMap<>();\r\n        response.put(\"timestamp\", LocalDateTime.now());\r\n        response.put(\"status\", HttpStatus.BAD_REQUEST.value());\r\n        response.put(\"error\", \"Bad Request\");\r\n\r\n        Map<String, String> errors = new HashMap<>();\r\n        ex.getBindingResult().getAllErrors().forEach((error) -> {\r\n            String fieldName = ((FieldError) error).getField();\r\n            String errorMessage = error.getDefaultMessage();\r\n            errors.put(fieldName, errorMessage);\r\n        });\r\n        response.put(\"message\", errors);\r\n\r\n        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);\r\n    }\r\n\r\n    @ExceptionHandler(BadCredentialsException.class)\r\n    public ResponseEntity<Map<String, Object>> handleBadCredentialsException(BadCredentialsException ex) {\r\n        Map<String, Object> response = new HashMap<>();\r\n        response.put(\"timestamp\", LocalDateTime.now());\r\n        response.put(\"status\", HttpStatus.UNAUTHORIZED.value());\r\n        response.put(\"error\", \"Unauthorized\");\r\n        response.put(\"message\", \"Invalid email or password\");\r\n        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);\r\n    }\r\n\r\n    @ExceptionHandler(LockedException.class)\r\n    public ResponseEntity<Map<String, Object>> handleLockedException(LockedException ex) {\r\n        Map<String, Object> response = new HashMap<>();\r\n        response.put(\"timestamp\", LocalDateTime.now());\r\n        response.put(\"status\", HttpStatus.UNAUTHORIZED.value());\r\n        response.put(\"error\", \"Unauthorized\");\r\n        response.put(\"message\", ex.getMessage());\r\n        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);\r\n    }\r\n\r\n    @ExceptionHandler(RuntimeException.class)\r\n    public ResponseEntity<Map<String, Object>> handleRuntimeException(RuntimeException ex) {\r\n        Map<String, Object> response = new HashMap<>();\r\n        response.put(\"timestamp\", LocalDateTime.now());\r\n        response.put(\"status\", HttpStatus.BAD_REQUEST.value());\r\n        response.put(\"error\", \"Bad Request\");\r\n        response.put(\"message\", ex.getMessage());\r\n        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java b/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java	(date 1778132225552)
+@@ -1,66 +1,0 @@
+-package Royal_Medico.auth_service.exception;
+-
+-import org.springframework.http.HttpStatus;
+-import org.springframework.http.ResponseEntity;
+-import org.springframework.security.authentication.BadCredentialsException;
+-import org.springframework.security.authentication.LockedException;
+-import org.springframework.validation.FieldError;
+-import org.springframework.web.bind.MethodArgumentNotValidException;
+-import org.springframework.web.bind.annotation.ExceptionHandler;
+-import org.springframework.web.bind.annotation.RestControllerAdvice;
+-
+-import java.time.LocalDateTime;
+-import java.util.HashMap;
+-import java.util.Map;
+-
+-@RestControllerAdvice
+-public class GlobalExceptionHandler {
+-
+-    @ExceptionHandler(MethodArgumentNotValidException.class)
+-    public ResponseEntity<Map<String, Object>> handleValidationExceptions(MethodArgumentNotValidException ex) {
+-        Map<String, Object> response = new HashMap<>();
+-        response.put("timestamp", LocalDateTime.now());
+-        response.put("status", HttpStatus.BAD_REQUEST.value());
+-        response.put("error", "Bad Request");
+-
+-        Map<String, String> errors = new HashMap<>();
+-        ex.getBindingResult().getAllErrors().forEach((error) -> {
+-            String fieldName = ((FieldError) error).getField();
+-            String errorMessage = error.getDefaultMessage();
+-            errors.put(fieldName, errorMessage);
+-        });
+-        response.put("message", errors);
+-
+-        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+-    }
+-
+-    @ExceptionHandler(BadCredentialsException.class)
+-    public ResponseEntity<Map<String, Object>> handleBadCredentialsException(BadCredentialsException ex) {
+-        Map<String, Object> response = new HashMap<>();
+-        response.put("timestamp", LocalDateTime.now());
+-        response.put("status", HttpStatus.UNAUTHORIZED.value());
+-        response.put("error", "Unauthorized");
+-        response.put("message", "Invalid email or password");
+-        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+-    }
+-
+-    @ExceptionHandler(LockedException.class)
+-    public ResponseEntity<Map<String, Object>> handleLockedException(LockedException ex) {
+-        Map<String, Object> response = new HashMap<>();
+-        response.put("timestamp", LocalDateTime.now());
+-        response.put("status", HttpStatus.UNAUTHORIZED.value());
+-        response.put("error", "Unauthorized");
+-        response.put("message", ex.getMessage());
+-        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+-    }
+-
+-    @ExceptionHandler(RuntimeException.class)
+-    public ResponseEntity<Map<String, Object>> handleRuntimeException(RuntimeException ex) {
+-        Map<String, Object> response = new HashMap<>();
+-        response.put("timestamp", LocalDateTime.now());
+-        response.put("status", HttpStatus.BAD_REQUEST.value());
+-        response.put("error", "Bad Request");
+-        response.put("message", ex.getMessage());
+-        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+-    }
+-}
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile default=\"true\" name=\"Default\" enabled=\"true\" />\r\n    </annotationProcessing>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/.idea/compiler.xml	(date 1778132708059)
+@@ -3,6 +3,30 @@
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+       <profile default="true" name="Default" enabled="true" />
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++      </profile>
++      <profile name="Annotation profile for auth-service" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <processorPath useClasspath="false">
++          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
++          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
++        </processorPath>
++        <module name="auth-service" />
++      </profile>
+     </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="api-gateway" target="17" />
++    </bytecodeTargetLevel>
++  </component>
++  <component name="JavacSettings">
++    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
++      <module name="api-gateway" options="-parameters" />
++      <module name="auth-service" options="-parameters" />
++    </option>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/auth-service/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_21\" project-jdk-name=\"21\" project-jdk-type=\"JavaSDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/.idea/misc.xml	(date 1778131518379)
+@@ -5,6 +5,7 @@
+     <option name="originalFiles">
+       <list>
+         <option value="$PROJECT_DIR$/auth-service/pom.xml" />
++        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+       </list>
+     </option>
+   </component>
+Index: auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Royal_Medico.auth_service.repository;\r\n\r\nimport Royal_Medico.auth_service.entity.User;\r\nimport org.springframework.data.jpa.repository.JpaRepository;\r\n\r\nimport java.util.Optional;\r\n\r\npublic interface UserRepository extends JpaRepository<User, Long> {\r\n    Optional<User> findByEmail(String email);\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java b/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java
+--- a/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java	(revision 631b0c1f34c36123e46dd3e15403aac99fe99df5)
++++ b/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java	(date 1778132225554)
+@@ -1,10 +1,0 @@
+-package Royal_Medico.auth_service.repository;
+-
+-import Royal_Medico.auth_service.entity.User;
+-import org.springframework.data.jpa.repository.JpaRepository;
+-
+-import java.util.Optional;
+-
+-public interface UserRepository extends JpaRepository<User, Long> {
+-    Optional<User> findByEmail(String email);
+-}

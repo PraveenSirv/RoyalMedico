@@ -1,6 +1,6 @@
-package Royal_Medico.auth_service.repository;
+package royal_medico.auth_service.repository;
 
-import Royal_Medico.auth_service.entity.User;
+import royal_medico.auth_service.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

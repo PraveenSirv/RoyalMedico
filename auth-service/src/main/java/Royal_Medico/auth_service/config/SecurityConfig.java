@@ -1,4 +1,4 @@
-package Royal_Medico.auth_service.config;
+package royal_medico.auth_service.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

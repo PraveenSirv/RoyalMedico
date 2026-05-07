@@ -1,4 +1,4 @@
-package Royal_Medico.auth_service;
+package royal_medico.auth_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
