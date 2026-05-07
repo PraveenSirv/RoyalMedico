@@ -8,6 +8,8 @@ spring:
     web-application-type: reactive
   cloud:
     gateway:
+      default-filters:
+        - RemoveRequestHeader=X-Authenticated-User,X-Authenticated-Role,X-Authenticated-UserId
       routes:
         - id: auth-service
           uri: http://localhost:8081
@@ -16,11 +18,23 @@ spring:
         - id: medicine-service
           uri: http://localhost:8082
           predicates:
-            - Path=/api/medicines/**
+            - Path=/api/medicines/**, /api/medicine/**
         - id: order-service
           uri: http://localhost:8083
           predicates:
             - Path=/api/orders/**
+        - id: inventory-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/inventory/**
+        - id: supplier-service
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/supplier/**
+        - id: admin-service
+          uri: http://localhost:8086
+          predicates:
+            - Path=/api/admin/**
 
 management:
   endpoints:
@@ -37,9 +51,11 @@ logging:
   level:
     com.medical.gateway: INFO
     org.springframework.cloud.gateway: INFO
+    org.springframework.security: DEBUG
 
 jwt:
-  secret: 5367566B5970337336763979244226452948404D635166546A576E5A72347537
+  base64-secret: NTQ2NzU2NkI1OTcwMzM3MzM2NzYzOTc5MjQ0MjI2NDUyOTQ4NDA0RDYzNTE2NjU0NkE1NzZFNUE3MjM0NzUzNw== # Base64 encoded version of the previous 256-bit hex secret
+  issuer: royal-medico-auth-service
 
 eureka:
   client:

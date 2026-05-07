@@ -13,19 +13,28 @@ import java.util.UUID;
 @Component
 public class JwtUtil {
 
-    @Value("${jwt.secret:5367566B5970337336763979244226452948404D635166546A576E5A72347537}")
-    private String secret;
+    @Value("${jwt.base64-secret:NTQ2NzU2NkI1OTcwMzM3MzM2NzYzOTc5MjQ0MjI2NDUyOTQ4NDA0RDYzNTE2NjU0NkE1NzZFNUE3MjM0NzUzNw==}")
+    private String base64Secret;
+
+    @Value("${jwt.issuer:royal-medico-auth-service}")
+    private String issuer;
 
     private static final long ACCESS_TOKEN_EXPIRATION_MS = 15 * 60 * 1000; // 15 minutes
 
     private Key getSigningKey() {
-        return Keys.hmacShaKeyFor(secret.getBytes());
+        byte[] secretKeyBytes = java.util.Base64.getDecoder().decode(base64Secret);
+        return Keys.hmacShaKeyFor(secretKeyBytes);
     }
 
-    public String generateAccessToken(String email, String role) {
+    public String generateAccessToken(Long userId, String email, String role, java.util.List<String> authorities) {
         return Jwts.builder()
+                .setId(UUID.randomUUID().toString())
                 .setSubject(email)
+                .setIssuer(issuer)
+                .setAudience("royal-medico-gateway")
+                .claim("userId", userId.toString())
                 .claim("role", role)
+                .claim("authorities", authorities)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + ACCESS_TOKEN_EXPIRATION_MS))
                 .signWith(getSigningKey())
