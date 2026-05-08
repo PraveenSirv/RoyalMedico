@@ -7,9 +7,9 @@ spring:
     name: auth-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/auth_db
+    url: jdbc:postgresql://localhost:5432/auth_user
     username: postgres
-    password: postgres
+    password: Vision50@2025
 
   jpa:
     hibernate:
