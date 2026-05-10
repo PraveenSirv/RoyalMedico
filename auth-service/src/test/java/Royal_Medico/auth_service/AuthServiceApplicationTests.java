@@ -1,4 +1,4 @@
-package royal_medico.auth_service;
+package Royal_Medico.auth_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

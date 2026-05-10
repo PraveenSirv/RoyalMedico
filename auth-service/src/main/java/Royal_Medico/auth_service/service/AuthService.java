@@ -1,15 +1,15 @@
-package royal_medico.auth_service.service;
+package Royal_Medico.auth_service.service;
 
-import royal_medico.auth_service.dto.AuthResponse;
-import royal_medico.auth_service.dto.LoginRequest;
-import royal_medico.auth_service.dto.RegisterRequest;
-import royal_medico.auth_service.entity.RefreshToken;
-import royal_medico.auth_service.entity.Role;
-import royal_medico.auth_service.entity.User;
-import royal_medico.auth_service.repository.RefreshTokenRepository;
-import royal_medico.auth_service.repository.UserRepository;
-import royal_medico.auth_service.util.HashUtil;
-import royal_medico.auth_service.util.JwtUtil;
+import Royal_Medico.auth_service.dto.AuthResponse;
+import Royal_Medico.auth_service.dto.LoginRequest;
+import Royal_Medico.auth_service.dto.RegisterRequest;
+import Royal_Medico.auth_service.entity.RefreshToken;
+import Royal_Medico.auth_service.entity.Role;
+import Royal_Medico.auth_service.entity.User;
+import Royal_Medico.auth_service.repository.RefreshTokenRepository;
+import Royal_Medico.auth_service.repository.UserRepository;
+import Royal_Medico.auth_service.util.HashUtil;
+import Royal_Medico.auth_service.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.LockedException;
@@ -18,7 +18,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -121,11 +120,14 @@ public class AuthService {
         String refreshTokenStr = jwtUtil.generateRefreshToken();
         String hashedToken = hashUtil.hash(refreshTokenStr);
 
+        // Invalidate all existing refresh tokens for this user before issuing a new one
+        refreshTokenRepository.deleteByUser_Id(user.getId());
+
         RefreshToken refreshToken = new RefreshToken();
         refreshToken.setToken(hashedToken); // Store hash, not raw
         refreshToken.setUser(user);
         refreshToken.setExpiryDate(LocalDateTime.now().plusDays(REFRESH_TOKEN_VALIDITY_DAYS));
-        
+
         refreshTokenRepository.save(refreshToken);
 
         return new AuthResponse(accessToken, refreshTokenStr); // Return raw token to user

@@ -1,6 +1,6 @@
-package royal_medico.auth_service.repository;
+package Royal_Medico.auth_service.repository;
 
-import royal_medico.auth_service.entity.RefreshToken;
+import Royal_Medico.auth_service.entity.RefreshToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

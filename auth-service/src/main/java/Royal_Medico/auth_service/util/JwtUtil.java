@@ -1,4 +1,4 @@
-package royal_medico.auth_service.util;
+package Royal_Medico.auth_service.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

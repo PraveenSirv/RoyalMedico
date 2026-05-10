@@ -1,4 +1,4 @@
-package royal_medico.auth_service.dto;
+package Royal_Medico.auth_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

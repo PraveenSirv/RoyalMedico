@@ -13,7 +13,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>royal_medico</groupId>
+	<groupId>Royal_Medico</groupId>
 	<artifactId>auth-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 

@@ -1,4 +1,4 @@
-package royal_medico.auth_service.dto;
+package Royal_Medico.auth_service.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;

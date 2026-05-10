@@ -1,4 +1,4 @@
-package royal_medico.auth_service.config;
+package Royal_Medico.auth_service.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

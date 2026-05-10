@@ -1,4 +1,4 @@
-package royal_medico.auth_service.entity;
+package Royal_Medico.auth_service.entity;
 
 import java.util.List;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package royal_medico.auth_service.exception;
+package Royal_Medico.auth_service.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
