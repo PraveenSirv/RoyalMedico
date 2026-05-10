@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a19db2fe-2b81-4e48-b91b-e00d86513ca9" name="Changes" comment="API Gateway Update - 05/07/2026">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/medical/gateway/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/medical/gateway/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/medical/gateway/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/medical/gateway/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/AuthServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/JpaAuditingConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/config/UserPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/AuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RefreshRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/dto/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/RefreshToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/RefreshTokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/util/HashUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/util/HashUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/Royal_Medico/auth_service/util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/test/java/Royal_Medico/auth_service/AuthServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/test/java/Royal_Medico/auth_service/AuthServiceApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="a19db2fe-2b81-4e48-b91b-e00d86513ca9" name="Changes" comment="Test - 05/10/2026" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778144495981</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test - 05/10/2026">
+      <option name="closed" value="true" />
+      <created>1778389999798</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778389999799</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +207,7 @@
     <MESSAGE value="Delete order-service directory" />
     <MESSAGE value="Auth Service Update - 05/06/2026" />
     <MESSAGE value="API Gateway Update - 05/07/2026" />
-    <option name="LAST_COMMIT_MESSAGE" value="API Gateway Update - 05/07/2026" />
+    <MESSAGE value="Test - 05/10/2026" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test - 05/10/2026" />
   </component>
 </project>
