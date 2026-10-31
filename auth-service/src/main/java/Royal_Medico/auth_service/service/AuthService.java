@@ -1,18 +1,17 @@
 package Royal_Medico.auth_service.service;
 
 import Royal_Medico.auth_service.config.JwtProperties;
-import Royal_Medico.auth_service.dto.AuthResponse;
-import Royal_Medico.auth_service.dto.LoginRequest;
-import Royal_Medico.auth_service.dto.RegisterRequest;
-import Royal_Medico.auth_service.entity.RefreshToken;
-import Royal_Medico.auth_service.entity.Role;
-import Royal_Medico.auth_service.entity.User;
+import Royal_Medico.auth_service.dto.*;
+import Royal_Medico.auth_service.entity.*;
 import Royal_Medico.auth_service.repository.RefreshTokenRepository;
+import Royal_Medico.auth_service.repository.TenantMembershipRepository;
+import Royal_Medico.auth_service.repository.TenantRepository;
 import Royal_Medico.auth_service.repository.UserRepository;
 import Royal_Medico.auth_service.util.HashUtil;
 import Royal_Medico.auth_service.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.LockedException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -20,6 +19,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -28,6 +29,8 @@ public class AuthService {
 
     private final UserRepository userRepository;
     private final RefreshTokenRepository refreshTokenRepository;
+    private final TenantRepository tenantRepository;
+    private final TenantMembershipRepository tenantMembershipRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
     private final HashUtil hashUtil;
@@ -46,10 +49,13 @@ public class AuthService {
         user.setEmail(request.getEmail());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
         user.setName(request.getName());
-        user.setRole(Role.valueOf(request.getRole()));
+        // Public registration strictly creates a global user account with CUSTOMER
+        // capabilities only
+        user.setRole(Role.CUSTOMER);
 
         userRepository.save(user);
-        log.info("AUTH_AUDIT_REGISTER_SUCCESS: User registered successfully - userId: {}, email: {}, role: {}", user.getId(), user.getEmail(), user.getRole());
+        log.info("AUTH_AUDIT_REGISTER_SUCCESS: User registered successfully - userId: {}, email: {}, role: {}",
+                user.getId(), user.getEmail(), user.getRole());
 
         return createAuthResponse(user);
     }
@@ -63,12 +69,14 @@ public class AuthService {
                 });
 
         if (!user.isActive()) {
-            log.warn("AUTH_AUDIT_LOGIN_BLOCKED: Account is disabled - userId: {}, email: {}", user.getId(), user.getEmail());
+            log.warn("AUTH_AUDIT_LOGIN_BLOCKED: Account is disabled - userId: {}, email: {}", user.getId(),
+                    user.getEmail());
             throw new LockedException("Account is disabled");
         }
 
         if (user.isAccountLocked()) {
-            log.warn("AUTH_AUDIT_LOGIN_BLOCKED: Account is locked - userId: {}, email: {}", user.getId(), user.getEmail());
+            log.warn("AUTH_AUDIT_LOGIN_BLOCKED: Account is locked - userId: {}, email: {}", user.getId(),
+                    user.getEmail());
             throw new LockedException("Account is locked due to too many failed attempts");
         }
 
@@ -77,9 +85,12 @@ public class AuthService {
             user.setFailedLoginAttempts(newAttempts);
             if (newAttempts >= MAX_FAILED_ATTEMPTS) {
                 user.setAccountLocked(true);
-                log.warn("AUTH_AUDIT_ACCOUNT_LOCKOUT: Account locked due to {} consecutive failed attempts - userId: {}, email: {}", MAX_FAILED_ATTEMPTS, user.getId(), user.getEmail());
+                log.warn(
+                        "AUTH_AUDIT_ACCOUNT_LOCKOUT: Account locked due to {} consecutive failed attempts - userId: {}, email: {}",
+                        MAX_FAILED_ATTEMPTS, user.getId(), user.getEmail());
             } else {
-                log.warn("AUTH_AUDIT_LOGIN_FAILED: Bad credentials for email: {} - failed attempts: {}/{}", request.getEmail(), newAttempts, MAX_FAILED_ATTEMPTS);
+                log.warn("AUTH_AUDIT_LOGIN_FAILED: Bad credentials for email: {} - failed attempts: {}/{}",
+                        request.getEmail(), newAttempts, MAX_FAILED_ATTEMPTS);
             }
             userRepository.save(user);
             throw new BadCredentialsException("Invalid credentials");
@@ -91,7 +102,8 @@ public class AuthService {
             userRepository.save(user);
         }
 
-        log.info("AUTH_AUDIT_LOGIN_SUCCESS: User logged in successfully - userId: {}, email: {}", user.getId(), user.getEmail());
+        log.info("AUTH_AUDIT_LOGIN_SUCCESS: User logged in successfully - userId: {}, email: {}", user.getId(),
+                user.getEmail());
         return createAuthResponse(user);
     }
 
@@ -111,11 +123,11 @@ public class AuthService {
         }
 
         User user = refreshToken.getUser();
-        
+
         // Rotate refresh token
         refreshTokenRepository.delete(refreshToken);
         log.info("AUTH_AUDIT_REFRESH_SUCCESS: Refresh token rotated for userId: {}", user.getId());
-        
+
         return createAuthResponse(user);
     }
 
@@ -132,11 +144,10 @@ public class AuthService {
 
     private AuthResponse createAuthResponse(User user) {
         String accessToken = jwtUtil.generateAccessToken(
-                user.getId(), 
-                user.getEmail(), 
+                user.getId(),
+                user.getEmail(),
                 user.getRole().name(),
-                user.getRole().getAuthorities()
-        );
+                user.getRole().getAuthorities());
         String refreshTokenStr = jwtUtil.generateRefreshToken();
         String hashedToken = hashUtil.hash(refreshTokenStr);
 
@@ -153,5 +164,111 @@ public class AuthService {
         refreshTokenRepository.save(refreshToken);
 
         return new AuthResponse(accessToken, refreshTokenStr); // Return raw token to user
+    }
+
+    @Transactional(readOnly = true)
+    public List<TenantMembershipDto> getUserMemberships(String authHeader) {
+        String token = parseBearerToken(authHeader);
+        if (!jwtUtil.validateToken(token)) {
+            log.warn("AUTH_AUDIT_MEMBERSHIPS_FAILED: Invalid or expired token");
+            throw new BadCredentialsException("Invalid or expired token");
+        }
+
+        String email = jwtUtil.extractEmail(token);
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new BadCredentialsException("User not found"));
+
+        if (!user.isActive()) {
+            throw new LockedException("Account is disabled");
+        }
+
+        List<TenantMembership> memberships = tenantMembershipRepository.findByUserIdAndStatus(user.getId(),
+                MembershipStatus.ACTIVE);
+        return memberships.stream()
+                .map(m -> TenantMembershipDto.builder()
+                        .membershipId(m.getId())
+                        .tenantId(m.getTenant().getId())
+                        .tenantName(m.getTenant().getName())
+                        .tenantSlug(m.getTenant().getSlug())
+                        .role(m.getRole().name())
+                        .status(m.getStatus().name())
+                        .build())
+                .collect(Collectors.toList());
+    }
+
+    @Transactional(readOnly = true)
+    public TenantAuthResponse selectTenant(String authHeader, Long tenantId) {
+        if (tenantId == null) {
+            throw new IllegalArgumentException("tenantId must not be null");
+        }
+
+        String token = parseBearerToken(authHeader);
+        if (!jwtUtil.validateToken(token)) {
+            log.warn("AUTH_AUDIT_TENANT_SELECT_FAILED: Invalid or expired token");
+            throw new BadCredentialsException("Invalid or expired token");
+        }
+
+        String email = jwtUtil.extractEmail(token);
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new BadCredentialsException("User not found"));
+
+        if (!user.isActive()) {
+            log.warn("AUTH_AUDIT_TENANT_SELECT_BLOCKED: Account is disabled for userId: {}", user.getId());
+            throw new LockedException("Account is disabled");
+        }
+
+        if (user.isAccountLocked()) {
+            log.warn("AUTH_AUDIT_TENANT_SELECT_BLOCKED: Account is locked for userId: {}", user.getId());
+            throw new LockedException("Account is locked");
+        }
+
+        TenantMembership membership = tenantMembershipRepository.findByUserIdAndTenantId(user.getId(), tenantId)
+                .orElseThrow(() -> {
+                    log.warn("AUTH_AUDIT_TENANT_SELECT_UNAUTHORIZED: User {} has no membership in tenant {}", user.getId(), tenantId);
+                    return new AccessDeniedException("Unauthorized: User has no membership in tenant " + tenantId);
+                });
+
+        if (membership.getStatus() != MembershipStatus.ACTIVE) {
+            log.warn("AUTH_AUDIT_TENANT_SELECT_INACTIVE: Membership {} for user {} in tenant {} is {}",
+                    membership.getId(), user.getId(), tenantId, membership.getStatus());
+            throw new AccessDeniedException("Tenant membership is " + membership.getStatus());
+        }
+
+        Tenant tenant = membership.getTenant();
+        if (tenant.getStatus() != TenantStatus.ACTIVE) {
+            log.warn("AUTH_AUDIT_TENANT_SELECT_INACTIVE: Tenant {} ({}) status is {}", tenant.getId(), tenant.getName(), tenant.getStatus());
+            throw new AccessDeniedException("Tenant is " + tenant.getStatus());
+        }
+
+        List<String> authorities = List.of("ROLE_" + membership.getRole().name());
+        String tenantAccessToken = jwtUtil.generateTenantAccessToken(
+                user.getId(),
+                user.getEmail(),
+                tenant.getId(),
+                membership.getId(),
+                membership.getRole().name(),
+                authorities
+        );
+
+        log.info("AUTH_AUDIT_TENANT_SELECTED: User {} successfully selected tenant {} ({}) with role {}",
+                user.getId(), tenant.getId(), tenant.getName(), membership.getRole());
+
+        return TenantAuthResponse.builder()
+                .accessToken(tenantAccessToken)
+                .tokenType("Bearer")
+                .expiresInMs(jwtUtil.getAccessTokenExpirationMs())
+                .tenantId(tenant.getId())
+                .tenantName(tenant.getName())
+                .tenantSlug(tenant.getSlug())
+                .membershipId(membership.getId())
+                .tenantRole(membership.getRole().name())
+                .build();
+    }
+
+    private String parseBearerToken(String authHeader) {
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            return authHeader.substring(7).trim();
+        }
+        throw new BadCredentialsException("Missing or invalid Authorization header");
     }
 }

@@ -45,7 +45,7 @@ const Navbar = () => {
                 <span className="text-white text-sm">Hello, {user?.email}</span>
                 <Link 
                   to={
-                    user?.role === 'ADMIN' ? '/admin/dashboard' : 
+                    user?.role === 'SUPER_ADMIN' ? '/admin/dashboard' : 
                     user?.role === 'PHARMACIST' ? '/pharmacist/dashboard' : 
                     '/customer/dashboard'
                   }

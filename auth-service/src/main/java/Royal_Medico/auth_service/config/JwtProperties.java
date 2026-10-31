@@ -45,6 +45,17 @@ public class JwtProperties {
      */
     private long refreshTokenValidityDays = 7;
 
+    public String getBase64Secret() { return base64Secret; }
+    public void setBase64Secret(String base64Secret) { this.base64Secret = base64Secret; }
+    public String getIssuer() { return issuer; }
+    public void setIssuer(String issuer) { this.issuer = issuer; }
+    public String getAudience() { return audience; }
+    public void setAudience(String audience) { this.audience = audience; }
+    public long getAccessTokenExpirationMs() { return accessTokenExpirationMs; }
+    public void setAccessTokenExpirationMs(long accessTokenExpirationMs) { this.accessTokenExpirationMs = accessTokenExpirationMs; }
+    public long getRefreshTokenValidityDays() { return refreshTokenValidityDays; }
+    public void setRefreshTokenValidityDays(long refreshTokenValidityDays) { this.refreshTokenValidityDays = refreshTokenValidityDays; }
+
     @PostConstruct
     public void validate() {
         if (base64Secret == null || base64Secret.trim().isEmpty()) {

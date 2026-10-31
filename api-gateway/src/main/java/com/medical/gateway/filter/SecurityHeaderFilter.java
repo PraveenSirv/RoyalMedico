@@ -25,14 +25,22 @@ public class SecurityHeaderFilter implements GlobalFilter, Ordered {
                     String userId = jwt.getClaimAsString("userId");
                     String username = jwt.getClaimAsString("sub");
                     String role = jwt.getClaimAsString("role");
+                    String tenantId = jwt.getClaimAsString("tenantId");
+                    String membershipId = jwt.getClaimAsString("membershipId");
 
-                    ServerHttpRequest mutatedRequest = exchange.getRequest().mutate()
+                    ServerHttpRequest.Builder builder = exchange.getRequest().mutate()
                             .header("X-Authenticated-UserId", userId != null ? userId : "")
                             .header("X-Authenticated-User", username != null ? username : "")
-                            .header("X-Authenticated-Role", role != null ? role : "")
-                            .build();
-                    
-                    return exchange.mutate().request(mutatedRequest).build();
+                            .header("X-Authenticated-Role", role != null ? role : "");
+
+                    if (tenantId != null && !tenantId.isBlank()) {
+                        builder.header("X-Authenticated-TenantId", tenantId);
+                    }
+                    if (membershipId != null && !membershipId.isBlank()) {
+                        builder.header("X-Authenticated-MembershipId", membershipId);
+                    }
+
+                    return exchange.mutate().request(builder.build()).build();
                 })
                 .defaultIfEmpty(exchange)
                 .flatMap(chain::filter);

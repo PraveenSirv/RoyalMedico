@@ -37,24 +37,24 @@ public class SecurityConfig {
                         .pathMatchers("/actuator/health").permitAll()
                         .pathMatchers("/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
 
-                        // ADMIN ONLY
-                        .pathMatchers("/api/admin/**").hasRole("ADMIN")
-                        .pathMatchers("/api/inventory/manage/**").hasRole("ADMIN")
-                        .pathMatchers("/api/supplier/manage/**").hasRole("ADMIN")
-                        .pathMatchers("/actuator/**").hasRole("ADMIN")
+                        // PLATFORM ADMINISTRATION ONLY (SUPER_ADMIN)
+                        .pathMatchers("/api/admin/**").hasRole("SUPER_ADMIN")
+                        .pathMatchers("/actuator/**").hasRole("SUPER_ADMIN")
 
-                        // PHARMACIST
-                        .pathMatchers("/api/medicine/**").hasAnyRole("ADMIN", "PHARMACIST")
-                        .pathMatchers("/api/prescription/**").hasAnyRole("ADMIN", "PHARMACIST")
-                        .pathMatchers("/api/orders/process/**").hasAnyRole("ADMIN", "PHARMACIST")
+                        // TENANT PHARMACY OPERATIONS (OWNER & PHARMACIST)
+                        .pathMatchers("/api/inventory/manage/**").hasAnyRole("OWNER", "PHARMACIST")
+                        .pathMatchers("/api/supplier/manage/**").hasAnyRole("OWNER", "PHARMACIST")
+                        .pathMatchers("/api/medicine/**").hasAnyRole("OWNER", "PHARMACIST")
+                        .pathMatchers("/api/prescription/**").hasAnyRole("OWNER", "PHARMACIST")
+                        .pathMatchers("/api/orders/process/**").hasAnyRole("OWNER", "PHARMACIST")
 
-                        // CUSTOMER
-                        .pathMatchers("/api/orders/**").hasAnyRole("ADMIN", "CUSTOMER")
-                        .pathMatchers("/api/cart/**").hasAnyRole("ADMIN", "CUSTOMER")
-                        .pathMatchers("/api/profile/**").hasAnyRole("ADMIN", "CUSTOMER")
+                        // CUSTOMER OPERATIONS
+                        .pathMatchers("/api/orders/**").hasAnyRole("CUSTOMER", "OWNER", "PHARMACIST")
+                        .pathMatchers("/api/cart/**").hasRole("CUSTOMER")
+                        .pathMatchers("/api/profile/**").authenticated()
 
-                        // DELIVERY_AGENT
-                        .pathMatchers("/api/delivery/**").hasAnyRole("ADMIN", "DELIVERY_AGENT")
+                        // DELIVERY AGENT
+                        .pathMatchers("/api/delivery/**").hasRole("DELIVERY_AGENT")
 
                         .anyExchange().authenticated())
                 .oauth2ResourceServer(oauth2 -> oauth2

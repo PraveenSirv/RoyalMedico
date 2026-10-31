@@ -1,9 +1,6 @@
 package Royal_Medico.auth_service.controller;
 
-import Royal_Medico.auth_service.dto.AuthResponse;
-import Royal_Medico.auth_service.dto.LoginRequest;
-import Royal_Medico.auth_service.dto.RefreshRequest;
-import Royal_Medico.auth_service.dto.RegisterRequest;
+import Royal_Medico.auth_service.dto.*;
 import Royal_Medico.auth_service.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -14,6 +11,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -62,5 +61,41 @@ public class AuthController {
     public ResponseEntity<String> logout(@RequestBody RefreshRequest request) {
         authService.logout(request.getRefreshToken());
         return ResponseEntity.ok("Logged out successfully");
+    }
+
+    @Operation(summary = "Get user pharmacy memberships")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "List of memberships retrieved"),
+            @ApiResponse(responseCode = "401", description = "Unauthorized or invalid token")
+    })
+    @GetMapping("/memberships")
+    public ResponseEntity<List<TenantMembershipDto>> getMemberships(@RequestHeader("Authorization") String authHeader) {
+        return ResponseEntity.ok(authService.getUserMemberships(authHeader));
+    }
+
+    @Operation(summary = "Select an active tenant context and receive tenant-scoped access token")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Tenant selected and token issued"),
+            @ApiResponse(responseCode = "401", description = "Unauthorized or invalid token"),
+            @ApiResponse(responseCode = "403", description = "Inactive or unauthorized tenant membership")
+    })
+    @PostMapping("/select-tenant")
+    public ResponseEntity<TenantAuthResponse> selectTenant(
+            @RequestHeader("Authorization") String authHeader,
+            @RequestBody @Valid TenantSelectRequest request) {
+        return ResponseEntity.ok(authService.selectTenant(authHeader, request.getTenantId()));
+    }
+
+    @Operation(summary = "Switch tenant context and receive new tenant-scoped access token")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Tenant switched and token issued"),
+            @ApiResponse(responseCode = "401", description = "Unauthorized or invalid token"),
+            @ApiResponse(responseCode = "403", description = "Inactive or unauthorized tenant membership")
+    })
+    @PostMapping("/switch-tenant")
+    public ResponseEntity<TenantAuthResponse> switchTenant(
+            @RequestHeader("Authorization") String authHeader,
+            @RequestBody @Valid TenantSelectRequest request) {
+        return ResponseEntity.ok(authService.selectTenant(authHeader, request.getTenantId()));
     }
 }

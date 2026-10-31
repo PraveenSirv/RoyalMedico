@@ -23,5 +23,5 @@ public class RegisterRequest {
     private String name;
 
     @NotBlank(message = "Role is required")
-    private String role; // ADMIN / PHARMACIST / CUSTOMER
+    private String role; // Ignored on public registration; enforced as Role.CUSTOMER
 }

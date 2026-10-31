@@ -1,15 +1,20 @@
 spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: validate
     show-sql: false
     properties:
       hibernate:
         format_sql: false
   flyway:
-    enabled: false
+    enabled: true
+    baseline-on-migrate: false
+    locations: classpath:db/migration
 
 jwt:
   base64-secret: NTQ2NzU2NkI1OTcwMzM3MzM2NzYzOTc5MjQ0MjI2NDUyOTQ4NDA0RDYzNTE2NjU0NkE1NzZFNUE3MjM0NzUzNw==
   issuer: royal-medico-auth-service-postgres-it
+
 

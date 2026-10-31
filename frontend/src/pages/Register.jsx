@@ -58,7 +58,7 @@ const Register = () => {
       if (token) {
         const decoded = jwtDecode(token);
         const role = decoded.role;
-        if (role === 'ADMIN') navigate('/admin/dashboard');
+        if (role === 'SUPER_ADMIN') navigate('/admin/dashboard');
         else if (role === 'PHARMACIST') navigate('/pharmacist/dashboard');
         else navigate('/customer/dashboard');
       }
