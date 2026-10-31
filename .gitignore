@@ -1,0 +1,37 @@
+# Documentation excluded from Git
+/Docs/
+/Requirements.txt
+/PRD.md
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Java / Maven
+**/target/
+
+# Node
+**/node_modules/
+**/dist/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Database backups
+*.sql.gz
+*.dump
+*.backup
+backups/
+

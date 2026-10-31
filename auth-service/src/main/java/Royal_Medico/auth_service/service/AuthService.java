@@ -1,5 +1,6 @@
 package Royal_Medico.auth_service.service;
 
+import Royal_Medico.auth_service.config.JwtProperties;
 import Royal_Medico.auth_service.dto.AuthResponse;
 import Royal_Medico.auth_service.dto.LoginRequest;
 import Royal_Medico.auth_service.dto.RegisterRequest;
@@ -11,6 +12,7 @@ import Royal_Medico.auth_service.repository.UserRepository;
 import Royal_Medico.auth_service.util.HashUtil;
 import Royal_Medico.auth_service.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.LockedException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -19,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class AuthService {
@@ -28,14 +31,15 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
     private final HashUtil hashUtil;
+    private final JwtProperties jwtProperties;
 
     private static final int MAX_FAILED_ATTEMPTS = 5;
-    private static final long REFRESH_TOKEN_VALIDITY_DAYS = 7;
 
     @Transactional
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.findByEmail(request.getEmail()).isPresent()) {
-            throw new RuntimeException("Email already registered");
+            log.warn("AUTH_AUDIT_REGISTER_FAILED: Email already registered: {}", request.getEmail());
+            throw new IllegalArgumentException("Email already registered");
         }
 
         User user = new User();
@@ -45,6 +49,7 @@ public class AuthService {
         user.setRole(Role.valueOf(request.getRole()));
 
         userRepository.save(user);
+        log.info("AUTH_AUDIT_REGISTER_SUCCESS: User registered successfully - userId: {}, email: {}, role: {}", user.getId(), user.getEmail(), user.getRole());
 
         return createAuthResponse(user);
     }
@@ -52,15 +57,18 @@ public class AuthService {
     @Transactional
     public AuthResponse login(LoginRequest request) {
         User user = userRepository.findByEmail(request.getEmail())
-                .orElseThrow(() -> new BadCredentialsException("Invalid credentials")); // Prevent enumeration
+                .orElseThrow(() -> {
+                    log.warn("AUTH_AUDIT_LOGIN_FAILED: User not found for email: {}", request.getEmail());
+                    return new BadCredentialsException("Invalid credentials");
+                });
 
         if (!user.isActive()) {
+            log.warn("AUTH_AUDIT_LOGIN_BLOCKED: Account is disabled - userId: {}, email: {}", user.getId(), user.getEmail());
             throw new LockedException("Account is disabled");
         }
 
         if (user.isAccountLocked()) {
-            // Check if unlock duration has passed
-            // For now, simplistic lock logic
+            log.warn("AUTH_AUDIT_LOGIN_BLOCKED: Account is locked - userId: {}, email: {}", user.getId(), user.getEmail());
             throw new LockedException("Account is locked due to too many failed attempts");
         }
 
@@ -69,9 +77,12 @@ public class AuthService {
             user.setFailedLoginAttempts(newAttempts);
             if (newAttempts >= MAX_FAILED_ATTEMPTS) {
                 user.setAccountLocked(true);
+                log.warn("AUTH_AUDIT_ACCOUNT_LOCKOUT: Account locked due to {} consecutive failed attempts - userId: {}, email: {}", MAX_FAILED_ATTEMPTS, user.getId(), user.getEmail());
+            } else {
+                log.warn("AUTH_AUDIT_LOGIN_FAILED: Bad credentials for email: {} - failed attempts: {}/{}", request.getEmail(), newAttempts, MAX_FAILED_ATTEMPTS);
             }
             userRepository.save(user);
-            throw new BadCredentialsException("Invalid credentials"); // Prevent enumeration
+            throw new BadCredentialsException("Invalid credentials");
         }
 
         // Successful login, reset failed attempts
@@ -80,6 +91,7 @@ public class AuthService {
             userRepository.save(user);
         }
 
+        log.info("AUTH_AUDIT_LOGIN_SUCCESS: User logged in successfully - userId: {}, email: {}", user.getId(), user.getEmail());
         return createAuthResponse(user);
     }
 
@@ -87,17 +99,22 @@ public class AuthService {
     public AuthResponse refresh(String refreshTokenStr) {
         String hashedToken = hashUtil.hash(refreshTokenStr);
         RefreshToken refreshToken = refreshTokenRepository.findByToken(hashedToken)
-                .orElseThrow(() -> new RuntimeException("Invalid refresh token"));
+                .orElseThrow(() -> {
+                    log.warn("AUTH_AUDIT_REFRESH_FAILED: Invalid refresh token");
+                    return new BadCredentialsException("Invalid refresh token");
+                });
 
         if (refreshToken.getExpiryDate().isBefore(LocalDateTime.now())) {
             refreshTokenRepository.delete(refreshToken);
-            throw new RuntimeException("Refresh token expired");
+            log.warn("AUTH_AUDIT_REFRESH_FAILED: Refresh token expired for userId: {}", refreshToken.getUser().getId());
+            throw new BadCredentialsException("Refresh token expired");
         }
 
         User user = refreshToken.getUser();
         
         // Rotate refresh token
         refreshTokenRepository.delete(refreshToken);
+        log.info("AUTH_AUDIT_REFRESH_SUCCESS: Refresh token rotated for userId: {}", user.getId());
         
         return createAuthResponse(user);
     }
@@ -106,7 +123,10 @@ public class AuthService {
     public void logout(String refreshTokenStr) {
         if (refreshTokenStr != null) {
             String hashedToken = hashUtil.hash(refreshTokenStr);
-            refreshTokenRepository.findByToken(hashedToken).ifPresent(refreshTokenRepository::delete);
+            refreshTokenRepository.findByToken(hashedToken).ifPresent(token -> {
+                refreshTokenRepository.delete(token);
+                log.info("AUTH_AUDIT_LOGOUT: Refresh token revoked on logout for userId: {}", token.getUser().getId());
+            });
         }
     }
 
@@ -123,10 +143,12 @@ public class AuthService {
         // Invalidate all existing refresh tokens for this user before issuing a new one
         refreshTokenRepository.deleteByUser_Id(user.getId());
 
+        long validityDays = jwtProperties != null ? jwtProperties.getRefreshTokenValidityDays() : 7;
+
         RefreshToken refreshToken = new RefreshToken();
         refreshToken.setToken(hashedToken); // Store hash, not raw
         refreshToken.setUser(user);
-        refreshToken.setExpiryDate(LocalDateTime.now().plusDays(REFRESH_TOKEN_VALIDITY_DAYS));
+        refreshToken.setExpiryDate(LocalDateTime.now().plusDays(validityDays));
 
         refreshTokenRepository.save(refreshToken);
 

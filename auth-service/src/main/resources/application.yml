@@ -6,18 +6,8 @@ spring:
   application:
     name: auth-service
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/auth_user
-    username: postgres
-    password: root
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
+  profiles:
+    default: dev
 
   lifecycle:
     timeout-per-shutdown-phase: 20s
@@ -26,12 +16,14 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
-
+        include: health
   endpoint:
     health:
-      show-details: always
+      probes:
+        enabled: true
 
-logging:
-  level:
-    org.springframework.security: DEBUG
+jwt:
+  issuer: royal-medico-auth-service
+  audience: royal-medico-gateway
+  access-token-expiration-ms: 900000 # 15 minutes
+  refresh-token-validity-days: 7
